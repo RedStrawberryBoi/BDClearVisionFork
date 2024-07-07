@@ -13,7 +13,8 @@
     --dnd-color: #982929;
     --offline-color: #808080;
     --streaming-color: #593695;
-    --flair: "Strawberry Gaming"
+    --flair: "Strawberry Gaming";
+    --version: "6.9.0";
     --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
     --font-display: var(--main-font);
@@ -549,7 +550,7 @@ textarea,
 }
 
 .typeWindows_a934d8>.wordmark_a934d8:after {
-    content: "v6.9.0";
+    content: var(--version);
     color: rgba(255, 255, 255, .3);
     font-family: var(--code-font);
     font-size: 10px
