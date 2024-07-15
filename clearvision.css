@@ -83,7 +83,10 @@
     --bd-blue-hover: var(--hover-color);
     --bd-blue-active: var(--hover-color);
     --font-primary: var(--main-font);
-    --font-code: var(--code-font)
+    --font-code: var(--code-font);
+    --homeBadgeVisibility: 0%; /*Hides the badge for incoming friend requests on the home button (Default: 100%)*/
+    --friendBadgeVisibility: 0%; /*Hides friend request badge on the friends tab (Default: 100%)*/
+    --pendingBadgeVisibility: none; /*Hides friend request badge on the pending tab (Default: Inline)*/
 }
 
 @keyframes cv-fade-in {
@@ -11396,4 +11399,19 @@ div#magane div.stickerWindow div.packs-toolbar {
 .BDFDB-tooltip>.tooltipRight_b6c360 {
     position: relative;
     margin-left: 10px
+}
+
+/* Hide badge on home */
+.tutorialContainer_f9623d .lowerBadge_c5f96a .numberBadge_df8943, .tutorialContainer_f9623d defs rect{ 
+    opacity: var(--homeBadgeVisibility);
+}
+
+/* Hide badge on friends tab in dms*/
+.link_c91bad[href="/channels/@me"] .numberBadge_df8943 { 
+    opacity: var(--friendBadgeVisibility);
+}
+
+/* Hide badge in pending tab in friends tab*/
+.item_c2739c[aria-label="Pending"] .numberBadge_df8943 { 
+    display: var(--pendingBadgeVisibility);
 }
