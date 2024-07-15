@@ -84,9 +84,9 @@
     --bd-blue-active: var(--hover-color);
     --font-primary: var(--main-font);
     --font-code: var(--code-font);
-    --homeBadgeVisibility: 0%; /*Hides the badge for incoming friend requests on the home button (Default: 100%)*/
-    --friendBadgeVisibility: 0%; /*Hides friend request badge on the friends tab (Default: 100%)*/
-    --pendingBadgeVisibility: none; /*Hides friend request badge on the pending tab (Default: Inline)*/
+    --homeBadgeVisibility: 100%; /*Hides the badge for incoming friend requests on the home button (Default: 100%)*/
+    --friendBadgeVisibility: 100%; /*Hides friend request badge on the friends tab (Default: 100%)*/
+    --pendingBadgeVisibility: inline; /*Hides friend request badge on the pending tab (Default: inline)*/
 }
 
 @keyframes cv-fade-in {
