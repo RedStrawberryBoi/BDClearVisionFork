@@ -547,14 +547,14 @@ textarea,
 }
 
 .typeWindows_a934d8>.wordmark_a934d8:before {
-    content: "ClearVision";
+    content: var(--flair);
     color: hsla(0, 0%, 100%, .7);
     font-size: 14px;
     text-shadow: 0 0 3px #000
 }
 
 .typeWindows_a934d8>.wordmark_a934d8:after {
-    content: "v6.9.0";
+    content: var(--version);
     color: hsla(0, 0%, 100%, .3);
     font-family: var(--code-font);
     font-size: 10px
@@ -2170,59 +2170,59 @@ div[aria-checked=true] .mentionButton_b11c5e {
     color: hsla(0, 0%, 100%, .3)
 }
 
-.channelTextArea_d0696b {
+.channelTextArea_bdf0de {
     background: rgba(0, 0, 0, .6);
     transition: all .15s ease-in-out
 }
 
-.channelTextArea_d0696b:focus-within {
+.channelTextArea_bdf0de:focus-within {
     box-shadow: 0 0 2px 2px var(--main-color)
 }
 
-.channelTextArea_d0696b .scrollableContainer_d0696b {
+.channelTextArea_bdf0de .scrollableContainer_bdf0de {
     background: rgba(0, 0, 0, 0);
     border: 2px solid rgba(0, 0, 0, 0)
 }
 
-.channelTextArea_d0696b .attachButton_f298d4 {
+.channelTextArea_bdf0de .attachButton_f298d4 {
     padding: 10px 10px 10px 12px
 }
 
-.channelTextArea_d0696b .attachButton_f298d4 .attachButtonPlus_f298d4 {
+.channelTextArea_bdf0de .attachButton_f298d4 .attachButtonPlus_f298d4 {
     color: hsla(0, 0%, 100%, .7);
     transition: all .15s ease-in-out
 }
 
-.channelTextArea_d0696b .attachButton_f298d4:hover .attachButtonPlus_f298d4 {
+.channelTextArea_bdf0de .attachButton_f298d4:hover .attachButtonPlus_f298d4 {
     color: hsla(0, 0%, 100%, .9)
 }
 
-.channelTextArea_d0696b .textArea_d0696b .placeholder_a552a6 {
+.channelTextArea_bdf0de .textArea_bdf0de .placeholder_a552a6 {
     color: hsla(0, 0%, 100%, .4)
 }
 
-.channelTextArea_d0696b .textArea_d0696b.textAreaSlate_d0696b {
+.channelTextArea_bdf0de .textArea_bdf0de.textAreaSlate_bdf0de {
     margin-left: 10px
 }
 
-.channelTextArea_d0696b .button_f9af59 {
+.channelTextArea_bdf0de .button_f9af59 {
     color: hsla(0, 0%, 100%, .7);
     transition: all .15s ease-in-out
 }
 
-.channelTextArea_d0696b .button_f9af59:hover {
+.channelTextArea_bdf0de .button_f9af59:hover {
     color: hsla(0, 0%, 100%, .9)
 }
 
-.channelTextArea_d0696b .typing_d7ebeb {
+.channelTextArea_bdf0de .typing_d7ebeb {
     background: rgba(0, 0, 0, 0)
 }
 
-.channelTextArea_d0696b .typing_d7ebeb .text_d7ebeb {
+.channelTextArea_bdf0de .typing_d7ebeb .text_d7ebeb {
     color: hsla(0, 0%, 100%, .5)
 }
 
-.channelTextArea_d0696b .typing_d7ebeb .text_d7ebeb>strong {
+.channelTextArea_bdf0de .typing_d7ebeb .text_d7ebeb>strong {
     color: hsla(0, 0%, 100%, .7);
     font-weight: 700
 }
@@ -2235,11 +2235,11 @@ div[aria-checked=true] .mentionButton_b11c5e {
     background-color: rgba(0, 0, 0, .6)
 }
 
-.attachedBars_d0696b {
+.stackedBars_bdf0de {
     background: rgba(0, 0, 0, 0)
 }
 
-.stackedAttachedBar_d0696b {
+.stackedAttachedBar_bdf0de {
     border-bottom: 1px solid hsla(0, 0%, 100%, .07)
 }
 
@@ -2476,7 +2476,7 @@ div[aria-checked=true] .mentionButton_b11c5e {
 
 .button_dd4f85 {
     border-radius: 3px;
-    transition: all .3s ease-in-out
+    transition: background-color .3s ease-in-out
 }
 
 .lookFilled_dd4f85.colorBrand_dd4f85,
@@ -6632,7 +6632,7 @@ code {
     background: rgba(0, 0, 0, .8)
 }
 
-.picker_cd703d {
+.picker_cd703d.refresh_cd703d {
     background-color: var(--popout-color)
 }
 
@@ -7541,7 +7541,7 @@ code {
     background: rgba(0, 0, 0, .6)
 }
 
-.theme-dark .staticToolbar_de3e42>.channelTextArea_d0696b {
+.theme-dark .staticToolbar_de3e42>.channelTextArea_bdf0de {
     border-radius: 0 0 8px 8px
 }
 
@@ -7891,7 +7891,7 @@ code {
     background-color: rgba(0, 0, 0, 0)
 }
 
-.debugPanelStandalone_feab95 {
+.container_feab95 {
     background-color: var(--popout-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, .5)
 }
@@ -10397,6 +10397,14 @@ code {
     background-color: rgba(0, 0, 0, .4)
 }
 
+.movedTable_dd2627 {
+    background-color: rgba(0, 0, 0, .6)
+}
+
+.bannerContainer_cc2901 {
+    background: rgba(0, 0, 0, .4)
+}
+
 .standardSidebarView_c25c6d {
     background: rgba(0, 0, 0, 0)
 }
@@ -11710,6 +11718,7 @@ div.credentialItem_eaef52.container_d808b0:first-of-type {
     border: none
 }
 
+/*Hide badge on home button*/
 .tutorialContainer_f9623d .lowerBadge_c5f96a .numberBadge_df8943, .tutorialContainer_f9623d defs rect{ 
     display: flex;
     opacity: var(--homeBadgeVisibility);
