@@ -87,8 +87,8 @@
     --font-code: var(--code-font);
     --flair: "Strawberry Gaming";
     --version: "6.9.0";
-    --incomingBadgeVisibility: 100%;
-    /*Hides the badge for incoming friend requests on the home button (Default: 100%)*/
+    --incomingBadgeVisibility: 100%; /*Hides the badge for incoming friend requests on the home button (Default: 100%)*/
+    
 
 }
 
@@ -11460,8 +11460,13 @@ button.button__201d5.lookBlank__201d5.colorTransparent__201d5.sizeIcon__201d5.gr
     border: none
 }
 
-/*hide all incoming friend request badges*/
-.tutorialContainer__1f388 .lowerBadge_cc5dd2 .numberBadge_2b1f5, .tutorialContainer__1f388 defs rect{ 
+/*hide home button and friends tab incoming friend request badges*/
+.tutorialContainer__1f388 .lowerBadge_cc5dd2 .numberBadge__2b1f5, .link__972a0[href="/channels/@me"] .numberBadge__2b1f5, .tutorialContainer__1f388 defs rect{ 
     display: flex;
     opacity: var(--incomingBadgeVisibility);
+}
+
+/*hide the pending friend request badge (why does it have to have it's own set of code...*/
+.item_b3f026[data-tab-id="PENDING"] .numberBadge__2b1f5 {
+    display: var(--pendingBadgeVisibility);
 }
