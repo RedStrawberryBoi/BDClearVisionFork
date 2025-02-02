@@ -6,9 +6,8 @@
 :root {
  --flair: [];
  --version: [];
- --homeBadgeVisibility: [];
- --friendBadgeVisibility: [];
- --pendingBadgeVisibility: [];
+ --incomingBadgeVisibility: [0%-100%];
+ --pendingBadgeVisibility: [inline (Show), none (hide)];
 }
 ```
 
