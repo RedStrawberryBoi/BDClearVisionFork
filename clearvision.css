@@ -7,6 +7,22 @@
     --pendingBadgeVisibility: none;
 }
 
+/*Custom Flair (Clearvision -> [])*/
+.typeWindows__421ed>.wordmark__421ed:before {
+    content: var(--flair);
+    color: hsla(0, 0%, 100%, .7);
+    font-size: 14px;
+    text-shadow: 0 0 3px #000
+}
+
+/*Custom Version (v6.9.0 -> [])*/
+.typeWindows__421ed>.wordmark__421ed:after {
+    content: var(--version);
+    color: hsla(0, 0%, 100%, .3);
+    font-family: var(--code-font);
+    font-size: 10px
+}
+
 /*hide home button and friends tab incoming friend request badges*/
 .tutorialContainer__1f388 .lowerBadge_cc5dd2 .numberBadge__2b1f5, .link__972a0[href="/channels/@me"] .numberBadge__2b1f5, .tutorialContainer__1f388 defs rect{ 
     display: flex;
